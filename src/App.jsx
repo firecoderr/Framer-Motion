@@ -28,6 +28,7 @@ const App = () => {
   // Content //////////////////////////////////////////
   const content = isLoading ? <h1>...Loading</h1> : <TodoList todos={todos} />;
 
+  // Error comment ////////////////////////////////////
   if (error) return <p className="text-center text-2xl">{error.message}</p>;
 
   return (
