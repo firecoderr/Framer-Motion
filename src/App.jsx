@@ -28,7 +28,7 @@ const App = () => {
   // Content //////////////////////////////////////////
   const content = isLoading ? <h1>...Loading</h1> : <TodoList todos={todos} />;
 
-  if (error) return <p className="text-center">{error.message}</p>;
+  if (error) return <p className="text-center text-2xl">{error.message}</p>;
 
   return (
     <div className="p-5">
